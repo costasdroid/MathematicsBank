@@ -9,6 +9,8 @@
 
 \usepackage{tabularx}
 
+\usepackage[table]{xcolor}
+\usepackage{tikz}
 \pagestyle{empty}
 
 \usepackage{geometry}
@@ -48,9 +50,24 @@
 
       $$\lim_{x\to \infty}\frac{e^x}{e^x+1}=\lim_{x\to \infty}\frac{e^x}{e^x}=1 \implies \\\ y=1$$
 
-      Η γραφική της παράσταση λοιπόν είναι η
+      Ο πίνακας μελέτης της συνάρτησης λοιπόν είναι ο:
+
+      $$\begin{array}{c | c c c c c}
+        x & -\infty & & 0 & & +\infty \\ \hline
+        φ'(x) & & + & \vline & + & \\
+        φ''(x) & & + & 0 & - & \\ \hline
+        φ(x) & & \begin{tikzpicture}[scale=0.5]\draw [->] (0,0) to[out=0,in=225](1,0.5);\end{tikzpicture} & & \begin{tikzpicture}[scale=0.5]\draw [->] (0,0) to[out=45,in=180](1,0.5);\end{tikzpicture} &
+      \end{array}$$
+
+      Η γραφική της παράσταση είναι η
+
+      \begin{figure}
+        \includegraphics[width=\textwidth]{2017PanelliniesB.png}
+        \centering
+      \end{figure}
   \end{enumerate}
 
+  \pagebreak[1]
   \section*{Θέμα Γ}
     \begin{enumerate}
       \item [Γ1.] Η εφαπτομένη της γραφικής της $C_f$ στο σημείο $x=x_0$ είναι η
@@ -74,6 +91,13 @@
         Το εμβαδό $E_2$ μπορεί να βρεθεί με την αφαίρεση του εμβαδού του τριγώνου με κορυφές τα $(0,0)$, $(\pi,0)$ και $\left(\frac{\pi}{2},-\frac{\pi}{2}\right)$ με το εμβαδό $E_1$, το οποίο ισούται με $E_2=\frac{\pi\frac{\pi}{2}}{2}-2=\frac{\pi^2}{4}-2$. Έτσι
 
         $$\frac{E_1}{E_2}=\frac{\frac{\pi^2}{4}-2}{2}=\frac{\pi^2}{8}-1$$
+
+        Η γραφική παράστασή τους είναι
+
+        \begin{figure}[h]
+          \includegraphics[width=\textwidth]{2017panelliniesΓ.png}
+          \centering
+        \end{figure}
 
       \item [Γ3.] Από την γραφική παράσταση έχουμε ότι $f(x)\ge y_{ε_2} \implies f(x)-x+\pi \ge 0$ για κάθε $x\in[0,\pi]$ άρα
 
@@ -110,6 +134,13 @@
 
 
   \item [Δ2.] Με πίνακα προσήμων για την $f'(x)$ έχουμε
+
+    $$\begin{array}{c | c c c c c c c}
+      x & -1 & & 0 & & \frac{3\pi}{4} & & \pi \\ \hline
+      -\frac{4}{3}\left(-x\right)^{\frac{1}{3}} & & - & & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}\\
+      e^x(ημx+συνx) & \cellcolor{blue!25} & \cellcolor{blue!25} & & + & 0 & - \\ \hline
+      f'(x) & & \begin{tikzpicture}[scale=0.5]\draw [->] (0,0) to (1,-0.5);\end{tikzpicture} & & \begin{tikzpicture}[scale=0.5]\draw [->] (0,0) to (1,0.5);\end{tikzpicture} & & \begin{tikzpicture}[scale=0.5]\draw [->] (0,0) to (1,-0.5);\end{tikzpicture}
+    \end{array}$$
 
     άρα η συνάρτηση είναι γνησίως αύξουσα για $x\in(0,\frac{3\pi}{4})$ και γνησίως φθίνουσα για $x\in(-1,0)\cup(\frac{3\pi}{4},\pi)$. Για κάθε ένα από τα διαστήματα βρίσκουμε το σύνολο τιμών και έχουμε
 
