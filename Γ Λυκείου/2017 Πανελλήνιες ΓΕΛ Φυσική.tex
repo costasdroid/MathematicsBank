@@ -17,11 +17,13 @@
  \usepackage{graphicx}
  \graphicspath{ {images/} }
 
+ \usepackage{lastpage}
  \usepackage{wrapfig}
 \usepackage{fancyhdr}
  \pagestyle{fancy}
   \fancyhf{}
-  \rfoot{Σε συνεργασία με το \textbf{\underline{www.migadikos.gr}}}
+  \cfoot{Σε συνεργασία με το \textbf{\underline{www.migadikos.gr}}}
+  \rfoot{Σελίδα \thepage\  από \pageref{LastPage}}
 
 \begin{document}
   \part*{\centering{Πανελλήνιες Φυσική Γ Λυκείου 2017}}
@@ -138,7 +140,7 @@
         \end{figure}
 
     $$y_{t_1}=\begin{cases}
-      0,4ημ\left(3,5\pi-25\pi x \right), & 0\le x\le 0,14m \\
+      0,4ημ\left(3,5\pi-25\pi x \right) \text{ (SI)}, & 0\le x\le 0,14m \\
       0, & 0,14m < x
     \end{cases}$$
 
@@ -286,7 +288,7 @@
       \frac{K_{στρ(t_2)}}{K_{μετ(t_2)}}=\frac{\frac{1}{2}Iω_2^2}{\frac{1}{2}mv_{cm_2}^2}
     \end{gather*}
 
-    $t_1=t_2$:
+    $t_1\to t_2$:
 
     \begin{gather*}
       Σ\uptau_{cm}=0\implies ω_2=ω_1=20r/s \\
@@ -296,7 +298,8 @@
 
     \begin{gather*}
       \frac{K_{περ}}{K_{μετ}}=\frac{\frac{1}{2}Iω^2}{\frac{1}{2}mv^2}=\frac{\frac{1}{2}mR^2ω_2^2}{mv_2^2}=\frac{2}{9} \\
-      \frac{K_{περ}}{K_{μετ}}=\frac{2}{9}
+      \frac{K_{περ}}{K_{μετ}}=\frac{2}{9} \\
+      I=\frac{1}{2}mR^2=0,01kg\cdot m^2
     \end{gather*}
 
   \end{enumerate}
