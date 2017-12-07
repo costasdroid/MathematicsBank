@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+
+\setmainfont{Liberation Serif}
+
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+\usepackage{geometry}
+ \geometry{a4paper, total={190mm,280mm}, left=10mm, top=10mm}
+
+ \usepackage{graphicx}
+ \graphicspath{ {images/} }
+
+ \usepackage{wrapfig}
+
+\begin{document}
+
+\begin{table}
+    \small
+    \begin{tabularx}{\textwidth}{ c X r }
+      \begin{tabular}{ l }
+        Εισηγητής: Λόλας Κωνσταντίνος \\
+        Επαναληπτικό: Όρια - Συνέχεια
+      \end{tabular}
+      & &
+      \begin{tabular}{ r }
+        Θεσσαλονίκη, 13 / 12 / 2017
+      \end{tabular}
+    \end{tabularx}
+\end{table}
+
+\part*{\centering{Διαγώνισμα Κατεύθυνση Γ Λυκείου}}
+
+\section*{Θέμα Α}
+  \noindent
+  \begin{enumerate}
+    \item \textbf{[Μονάδες 10]} Αν $P(x)$ είναι μία πολυωνυμική συνάρτηση και $x_0\in \mathbb{R}$, να αποδείξετε ότι $$\lim_{x\to x_0}P(x)=P(x_0).$$
+    \item \textbf{[Μονάδες 3/10]} Πότε λέμε ότι μία συνάρτηση $f$ παρουσιάζει ολικό μέγιστο σε κάποιο σημείο $x_0$ του πεδίου ορισμού της;
+    \item \textbf{[Μονάδες 10]} Να χαρακτηρίσετε τις παρακάτω προτάσεις με Σωστό ή Λάθος
+    \begin{enumerate}
+      \item [α)] Κάθε οριζόντια ευθεία τέμενει τη γραφική παράσταση μιας 1-1 συνάρτησης το πολύ σε ένα σημείο.
+      \item [β)] Αν οι συναρτήσεις $f$, $g$ είναι συνεχείς στο σημείο $x_0$, τότε και η σύνθεσή τους $g\circ f$ είναι συνεχής στο ίδιο σημείο.
+      \item [γ)] Το σύνολο τιμών ενός κλειστού διαστήματος μέσω μιας συνεχούς και μη σταθερής συνάρτησης είναι πάντοτε κλειστό διάστημα.
+      \item [δ)] $\lim_{x\to 0^+}\ln x=-\infty$
+      \item [ε)] Αν υπάρχει το $\lim_{x\to x_0}\left(f(x)+g(x)\right)$, τότε υποχρεωτικά υπάρχουν και τα όρια $\lim_{x\to x_0}f(x)+\lim_{x\to x_0}g(x)$.
+    \end{enumerate}
+  \end{enumerate}
+
+\section*{Θέμα Β}
+  \noindent
+  Έστω συνάρτηση $f:\mathbb{R}\to\mathbb{R}$, η οποία είναι συνεχής και τέτοια, ώστε
+  $$f(2)=1, \lim_{x\to0^-}f(\frac{1}{x})=4 \text{ και } \lim_{x\to +\infty}\frac{xf(x)}{3x-1}=2.$$
+  Η $f$ είναι γνησίως φθίνουσα στο διάστημα $Δ_1=(-\infty,2]$ και γνησίως αύξουσα στο διάστημα $Δ_2=[2,+\infty)$.
+  Θεωρούμε και τη συνάρτηση $g:\mathbb{R}\to\mathbb{R}$ με τύπο $g(x)=\frac{4x}{x^2+4}$ για κάθε $x\in\mathbb{R}$
+  \begin{enumerate}
+    \item \textbf{[Μονάδες 11]} Να αποδείξετε ότι η συνάρτηση $g$ παρουσιάζει ολικό μέγιστο στο σημείο $x_0=2$.
+    \item \textbf{[Μονάδες 11]} Να βρείτε το σύνολο τιμών της συνάρτησης $f$.
+    \item \textbf{[Μονάδες 11]} Να βρείτε το πλήθος των ριζών της εξίσωσης $f(x)=α$ για τις διάφορες τιμές του πραγματικού αριθμού $α$.
+    \item \textbf{[Μονάδες 11]} Να λύσετε την εξίσωση $g(x)=f(x)$.
+  \end{enumerate}
+  %\vspace{7\baselineskip}
+
+\section*{Θέμα Γ}
+  \noindent
+  Έστω η συνάρτηση $f:(-1,+\infty)\to\mathbb{R}$ με $f\left((-1,+\infty)\right)=\mathbb{R}$, η οποία είναι 1-1 και τέτοια ώστε
+  $$f(x)\le x \text{ για κάθε } x>-1$$
+  και
+  $$f^{-1}(x)\le e^x-1 \text{ για κάθε } x\in\mathbb{R}.$$
+  Να αποδείξετε ότι
+  \begin{enumerate}
+    \item \textbf{[Μονάδες 8]} η γραφική παράσταση της αντίστροφης συνάρτησης $f^{-1}$ βρίσκεται "πάνω" από την ευθεία με $y=x$.
+    \item \textbf{[Μονάδες 8]} $f(x)\ge \ln(x+1)$ για κάθε $x>-1$.
+    \item \textbf{[Μονάδες 9]} $\lim_{x\to 0}f(x)=\lim_{x\to 0}f^{-1}(x)=0$.
+    \item \textbf{[Μονάδες 9]} Αν οι συναρτήσεις $f$ και $f^{-1}$ είναι συνεχείς, τότε υπάρχει αριθμός $x_0\in [1,2]$ τέτοιος ώστε
+    $$(x_0-1)f^{-1}(x_0)+(2-x_0)f(x_0)=x_0^2-2x_0+2.$$
+  \end{enumerate}
+
+  \section*{Θέμα Δ}
+    \noindent
+    Έστω δύο συναρτήσεις $f$, $g:\mathbb{R}\to\mathbb{R}$ τέτοιες ώστε $$g(x)=f\left(f(x)\right)+e^x \text{ για κάθε } x\in\mathbb{R}.$$
+    Αν η συνάρτηση $f$ είναι γνησίως αύξουσα και για κάθε $x_0\in\mathbb{R}$ υπάρχει το $\lim_{x\to x_0}f(x)$ και είναι πραγματικός αριθμός, να αποδείξετε ότι:
+    \begin{enumerate}
+      \item \textbf{[Μονάδες 8]} η συνάρτηση $g$ είναι γνησίως αύξουσα
+      \item \textbf{[Μονάδες 8]} η συνάρτηση $f$ είναι συνεχής
+      \item \textbf{[Μονάδες 9]} αν επιπλέον ισχύουν οι σχέσεις
+      $$\lim_{x\to 0}f(x)=1 \text{ και } f(x)\ne 0 \text{ για κάθε } x\in\mathbb{R},$$ τότε
+      \begin{enumerate}
+        \item [α)]  \textbf{[Μονάδες 8]} $g(x)>1$ για κάθε $x\in\mathbb{R}$
+        \item [β)]  \textbf{[Μονάδες 8]} Η εξίσωση
+        $$x^3g\left(2x^4\right)+x^4g\left(x^2\right)+x^2f\left(x^2-1\right)=1$$
+        έχει μία τουλάχιστον ρίζα στο διάστημα $(-1,1)$.
+      \end{enumerate}
+    \end{enumerate}
+
+\vspace{3\baselineskip}
+
+\part*{\centering{Καλή επιτυχία}}
+
+\end{document}
