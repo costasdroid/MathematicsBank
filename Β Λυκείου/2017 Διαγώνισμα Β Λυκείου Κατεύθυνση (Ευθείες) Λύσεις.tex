@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+
+\setmainfont{Liberation Serif}
+
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+\usepackage{geometry}
+ \geometry{a4paper, total={190mm,280mm}, left=10mm, top=10mm}
+
+ \usepackage{graphicx}
+ \graphicspath{ {images/} }
+
+ \usepackage{wrapfig}
+
+\begin{document}
+
+\begin{table}
+    \small
+    \begin{tabularx}{\textwidth}{ c X r }
+      \begin{tabular}{ l }
+        Εισηγητής: Λόλας Κωνσταντίνος \\
+        Επαναληπτικό: (Ευθείες)
+      \end{tabular}
+      & &
+      \begin{tabular}{ r }
+        Θεσσαλονίκη, 16 / 03 / 2018
+      \end{tabular}
+    \end{tabularx}
+\end{table}
+
+\part*{\centering{Διαγώνισμα Κατεύθυνση Β Λυκείου}}
+
+Δίνονται τα σημεία $Α(1,-2)$, $Β(-1,2)$ και η ευθεία $ε:y=-x+3$. Να βρείτε:
+\begin{enumerate}
+  \item τη παράλληλη της $ε$ που περνάει από το $Α$
+  \item τη μεσοκάθετο του τμήματος $ΑΒ$
+  \item το σημείο $Γ$ της ευθείας $ε$ που ισαπέχει από τα $Α$ και $Β$
+  \item το σημείο $Δ$ της ευθείας $ε$, ώστε το τρίγωνο $ΑΔΒ$ να είναι ορθογώνιο στο $Δ$
+  \item πού κινείται το σημείο $Ν$, όταν το σημείο $Ρ$ κινείται στην ευθεία $ε$ και ισχύει $\overrightarrow{ΑΝ}=2\overrightarrow{ΒΡ}$
+  \item το εμβαδό του τριγώνου που σχηματίζεται από την $ε$ και τους άξονες
+\end{enumerate}
+
+\vspace{3\baselineskip}
+
+\part*{\centering{Λύσεις}}
+
+\begin{enumerate}
+  \item $λ=-1$ άρα η ευθεία είναι η $y+2=-(x-1)$
+  \item $λ_{ΑΒ}=\frac{4}{-2}=-2$ άρα η ζηττούμενη έχει $λ=\frac{1}{2}$. Το μέσο του $ΑΒ$ είναι το $(0,0)$ έτσι η ζητούμενη ευθεία είναι η $y=\frac{1}{2}x$
+  \item Το σημείο βρίσκεται στη τομή των δύο ευθειών (της μεσοκαθέτου και της $ε$), έτσι $-2x+6=x \Rightarrow x=2$, και $y=1$
+  \item Αν $Δ=(x,y)$ Θα πρέπει $ΑΔ^2+ΒΔ^2=ΑΒ^2$ και $y=-x+3$, έτσι
+$$ (x-1)^2+(-x+3+2)^2 + (x+1)^2+(-x+3-2)^2 = 2^2+4^2$$
+με λύσεις $x=1$ και $x=2$, με αντίστοιχα $y=2$ και $y=1$
+  \item $\overrightarrow{ΑΝ}=(a-1, b+2)$ και $2\overrightarrow{ΒΡ}=2(x+1, -x+3-2)$. Έτσι αν λυθεί το σύστημα βρίσκετε $a-1=2x+2$ και $a+2=-2x+2$ Έτσι $a+b+1=4$
+  \item Για $x=0 \Rightarrow y=3$ και για $y=0 \Rightarrow x=3$. Το εμβαδό είναι λοιπόν $Ε=\frac{9}{2}$
+\end{enumerate}
+
+\end{document}
