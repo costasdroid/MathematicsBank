@@ -1,0 +1,135 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+
+\setmainfont{Liberation Serif}
+
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+\usepackage{geometry}
+ \geometry{a4paper, total={190mm,280mm}, left=10mm, top=10mm}
+
+ \usepackage{graphicx}
+ \graphicspath{ {images/} }
+
+ \usepackage{wrapfig}
+\usepackage{lipsum}%% a garbage package you don't need except to create examples.
+
+\begin{document}
+
+\begin{table}
+    \small
+    \begin{tabularx}{\textwidth}{ c X r }
+      \begin{tabular}{ c }
+        \includegraphics[scale=0.4]{logo} \\
+        ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ \\
+        ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΕΡΕΥΝΑΣ \& ΘΡΗΣΚΕΥΜΑΤΩΝ \\
+        ΠΕΡΙΦΕΡΕΙΑΚΗ Δ/ΝΣΗ ΠΡΩΤ. \& ΔΕΥΤ/ΜΙΑΣ  ΕΚΠ/ΣΗΣ \\
+        ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ \\
+        Δ/ΝΣΗ ΔΕΥΤΕΡΟΒΑΘΜΙΑΣ ΕΚΠ/ΣΗΣ ΑΝ. ΘΕΣ/ΝΙΚΗΣ \\
+        10ο ΓΕΝΙΚΟ ΛΥΚΕΙΟ ΘΕΣ/ΝΙΚΗΣ
+      \end{tabular}
+      & &
+      \begin{tabular}{ r }
+        Σχολικό Έτος: 2017 - 2018 \\
+        Εξ. Περίοδος: Μαΐου - Ιουνίου \\
+        Μάθημα: Μαθηματικά Κατεύθυνσης Β Λυκείου\\
+        Εισηγητής: Λόλας \\ \\
+        Θεσσαλονίκη, 12 / 06 / 2018
+      \end{tabular}
+    \end{tabularx}
+\end{table}
+
+\part*{\centering{Θέματα}}
+
+\section*{Θέμα Α}
+  \noindent
+  \begin{enumerate}
+    \item \textbf{[Μονάδες 10]} Να αποδείξετε ότι το μέσο ενός ευθύγραμμου τμήματος με άκρα τα σημεία $Α=(x_1,y_1)$ και $Β=(x_2,y_2)$ είναι το
+    $$Μ=(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}) \text{.}$$
+    \item \textbf{[Μονάδες 5]} Να ορίσετε την απόσταση των σημείων $Α=(x_1,y_1)$ και $Β=(x_2,y_2)$ συναρτήσει των συντεταγμένων τους.
+    \item \textbf{[Μονάδες 10]} Να χαρακτηρίσετε τις παρακάτω προτάσεις με Σωστό ή Λάθος
+    \begin{enumerate}
+      \item [α)] Όλες οι ευθείες είναι της μορφής $y=αx+β$.
+      \item [β)] Η απόσταση ενός σημείου $(x_0,y_0)$ από την ευθεία $Αx+Βy+Γ=0$ δίνεται από τον τύπο $d=\frac{Αx_0+Βy_0+Γ}{\sqrt{Α^2+Β^2}}$.
+      \item [γ)] Αν τα διανύσματα $\vec{α}$ και $\vec{β}$ είναι παράλληλα τότε $\vec{α}\cdot\vec{β}=|\vec{α}||\vec{β}|$.
+      \item [δ)] Ισχύει πάντα $\vec{α}^2=|\vec{α}|^2=|-\vec{α}|^2$.
+      \item [ε)] Το διάνυσμα $\frac{\vec{α}}{|\vec{α}|}$ είναι το μοναδιαίο διάνυσμα στη κατεύθυνση του $\vec{α}$
+    \end{enumerate}
+  \end{enumerate}
+
+\section*{Θέμα Β}
+  \noindent
+  Δίνονται τα διανύσματα $\vec{α}=(1,2)$ και $\vec{β}=(-2,κ)$ και το σημείο $Δ=(2,1)$
+  \begin{enumerate}
+    \item \textbf{[Μονάδες 5]} Να βρεθεί το σημείο $Γ$ ώστε $\vec{α}=\overrightarrow{ΓΔ}$.
+    \item \textbf{[Μονάδες 5]} Να βρεθεί το $κ$ ώστε τα διανύσματα να είναι παράλληλα.
+    \item \textbf{[Μονάδες 5]} Να βρεθεί το $κ$ ώστε τα διανύσματα να είναι κάθετα.
+
+    Αν $κ=3$
+    \item \textbf{[Μονάδες 5]} Να βρεθεί το $συν\widehat{(\vec{α},\vec{β})}$.
+    \item \textbf{[Μονάδες 5]} Να γραφτεί το $\vec{γ}=(-1,5)$ ως γραμμικός συνδιασμός των $\vec{α}$ και $\vec{β}$.
+
+  \end{enumerate}
+
+\section*{Θέμα Γ}
+  \noindent
+  Δίνονται τα σημεία $Ο=(0,0)$, $Α=(1,-5)$ και $Β=(2,2)$
+  \begin{enumerate}
+    \item \textbf{[Μονάδες 5]} Να δειχθεί ότι το $ΟΑΒ$ είναι τρίγωνο.
+    \item \textbf{[Μονάδες 5]} Να δειχθεί ότι η εξίσωση της ευθείας $ΑΒ$ είναι η $x-7y+12=0$.
+    \item \textbf{[Μονάδες 5]} Να βρεθεί η εξίσωση της μεσοκαθέτου του $ΑΒ$.
+    \item \textbf{[Μονάδες 5]} Να δειχθεί ότι η εξίσωση της διχοτόμου της γωνίας $\widehat{ΑΟΒ}$ είναι η $3x+10y=0$.
+    \item \textbf{[Μονάδες 5]} Να βρεθεί το εμβαδό του τριγώνου $ΟΑΒ$.
+
+  \end{enumerate}
+
+\section*{Θέμα Δ}
+  \noindent
+  Έστω η εξίσωση $ x^2+y^2+2λx+λy-15=0 $.
+  \begin{enumerate}
+    \item \textbf{[Μονάδες 5]} Να βρείτε τις τιμές του $λ$ ώστε η εξίσωση να παριστάνει κύκλο.
+    \item \textbf{[Μονάδες 5]} Να βρείτε τον γεωμετρικό τόπο των κέντρων των κύκλων του προηγούμενου ερωτήματος.
+
+    Για $λ=-2$,
+    \item \textbf{[Μονάδες 5]} Να δείξετε ότι το σημείο $(6,4)$ είναι εξωτερικό του κύκλου.
+    \item \textbf{[Μονάδες 5]} Να βρείτε τις εφαπτομένες του κύκλου που διέρχονται από το σημείο $(6,4)$.
+    \item \textbf{[Μονάδες 5]} Να βρείτε την ελάχιστη απόσταση του σημείου $(6,4)$ από τον κύκλο.
+
+  \end{enumerate}
+
+\vspace{3\baselineskip}
+
+\part*{\centering{Καλή επιτυχία}}
+\begin{table}[htb]
+    \begin{tabularx}{\textwidth}{ X c X c X}
+      &
+      \begin{tabular}[t]{ c }
+        Ο Δ/ντης
+        \\ \\ \\ \\ \\
+        Παπαδημητρίου Χρήστος
+      \end{tabular}
+      & &
+      \begin{tabular}[t]{ c }
+        Ο εισηγητής
+        \\ \\ \\ \\ \\
+        Λόλας Κωνσταντίνος
+      \end{tabular}
+      &
+    \end{tabularx}
+\end{table}
+
+\vspace*{\fill}
+ \textbf{Οδηγίες}
+ \begin{enumerate}
+   \item Να απαντήσετε σε όλα τα θέματα
+   \item Μην ξεχάσετε να γράψετε το ονοματεπώνυμό σας σε κάθε φύλλο που σας δώσουν.
+   \item Όλες οι απαντήσεις να δωθούν στο φύλλο απαντήσεων. Οτιδήποτε γραφτεί στη σελίδα με τα θέματα δεν θα ληφθεί υπόψιν.
+   \item Τα Σωστό - Λάθος δεν χρειάζονται αιτιολόγηση.
+ \end{enumerate}
+\end{document}
