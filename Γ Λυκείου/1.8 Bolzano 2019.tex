@@ -1,0 +1,85 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+
+\setmainfont{Liberation Serif}
+
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+\usepackage{geometry}
+ \geometry{a4paper, total={190mm,280mm}, left=10mm, top=10mm}
+
+ \usepackage{graphicx}
+ \graphicspath{ {images/} }
+
+ \usepackage{wrapfig}
+
+\renewcommand{\baselinestretch}{1.5}
+\everymath{\displaystyle}
+
+\begin{document}
+
+\begin{table}
+    \small
+    \begin{tabularx}{\textwidth}{ c X r }
+      \begin{tabular}{ l }
+        Εισηγητής: Λόλας Κωνσταντίνος \\
+        Επαναληπτικό: Bolzano
+      \end{tabular}
+      & &
+      \begin{tabular}{ r }
+        Θεσσαλονίκη, 12 / 12 / 2019
+      \end{tabular}
+    \end{tabularx}
+\end{table}
+
+\part*{\centering{Διαγώνισμα Κατεύθυνση Γ Λυκείου}}
+
+\section*{Θέμα Α}
+  \noindent
+  Δίνεται η συνάρτηση $f:(1,+\infty)\to \mathbb{R}$ με $f(x)=e^x-\frac{x+1}{x-1}$.
+  \begin{enumerate}
+    \item \textbf{[Μονάδες 6]} Να δείξετε ότι η συνάρτηση $f$ γράφεται στη μορφή $f(x)=e^x-\frac{2}{x-1}-1$ και στη συνέχεια ότι είναι γνησίως αύξουσα.
+    \item \textbf{[Μονάδες 6]} Να δείξετε ότι ορίζεται η αντίστροφη συνάρτηση $f^{-1}$ και να βρείτε το πεδίο ορισμού της.
+    \item \textbf{[Μονάδες 6]} Να δείξετε ότι η συνάρτηση $f$ έχει μία ακριβώς ρίζα $x_0$ στο διάστημα $(1,2)$.
+    \item \textbf{[Μονάδες 7]} Να δείξετε ότι η εξίσωση $e^x=\frac{x+1}{x-1}$ έχει δύο τουλάχιστον ρίζες αντίθετες.
+  \end{enumerate}
+  %\vspace{7\baselineskip}
+
+\section*{Θέμα Β}
+  \noindent
+  Έστω $f:\mathbb{R}\to \mathbb{R}$ μία συνεχής συνάρτηση.
+  \begin{enumerate}
+    \item \textbf{[Μονάδες 6]} Αν $1<f(x)<e$, να δείξετε ότι η εξίσωση $f(x)=e^x$ έχει μία τουλάχιστον ρίζα στο διάστημα $(0,1)$.
+    \item \textbf{[Μονάδες 6]} Αν $f(0)>1$ και $\lim_{x\to +\infty}f(x)=-\infty$, να δείξετε ότι η εξίσωση $f(x)=e^x+x ημ\frac{1}{x}$ έχει μία τουλάχιστον θετική ρίζα.
+    \item \textbf{[Μονάδες 6]} Αν $f(a)+f(3a)=4a$, $a>0$ και η $f$ είναι γνησίως αύξουσα να δείξετε ότι η εξίσωση $\frac{f(x)-a}{x-3a}=\frac{f(x)-3a}{x-a}$, έχει μία τουλάχιστον ρίζα στο διάστημα $(a,3a)$.
+    \item \textbf{[Μονάδες 7]} Θεωρούμε επιπλέον τη συνάρτηση $g:[1,3]\to \mathbb{R}$ με $g(x)=f(x)-x$. Να δείξετε ότι υπάρχει $x_0\in [1,3]$, ώστε $$g(x_0)=\frac{f(1)+2f(2)+3f(3)}{6}-\frac{7}{3}$$
+  \end{enumerate}
+
+  \section*{Θέμα Γ}
+    \noindent
+    Θεωρούμε τις συνεχείς συναρτήσεις $f$, $g:\mathbb{R}\to \mathbb{R}$ για τις οποίες ισχύουν:
+    \begin{itemize}
+      \item $f(0)=1$, $f(x)\ne x$ και $\frac{f(x)-x}{e^x}+\frac{e^x}{x-f(x)}=0$, για κάθε $x\in \mathbb{R}$
+      \item $g(x)=\begin{cases} f(x) & \text{, }  x\le 0 \\ k-2x-ln(x+1) & \text{, }  x>0\end{cases}$
+    \end{itemize}}
+
+    \begin{enumerate}
+      \item \textbf{[Μονάδες 6]} Να δείξετε ότι $f(x)=e^x+x$, $x\in \mathbb{R}$ και να βρείτε την τιμή του $k$.
+      \item \textbf{[Μονάδες 6]} Να βρείτε το σύνολο τιμών της συνάρτησης $g$ και να δείξετε ότι η $g$ έχει ακριβώς δύο ρίζες ετερόσημες.
+      \item \textbf{[Μονάδες 6]} Να δείξετε ότι η εξίσωση $\frac{g(a)-1}{x-1}+\frac{g(β)-1}{x-2}=2019$ έχει μία τουλάχιστον ρίζα στο διάστημα $(1,2)$, για κάθε $a$, $β\ne 0$.
+      \item \textbf{[Μονάδες 7]} Αν $x_1$, $x_2$ οι ρίζες του ερωτήματος $Γ2$ με $x_1 < x_2$ να δείξετε ότι η εξίσωση
+      $$x+g(x)=ημ x$$
+      έχει μία τουλάχιστον ρίζα στο διάστημα $(x_1,x_2)$.
+    \end{enumerate}
+
+\vspace{3\baselineskip}
+
+\part*{\centering{Καλή επιτυχία}}
+
+\end{document}
