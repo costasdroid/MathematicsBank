@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+
+\setmainfont{Liberation Serif}
+
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+\usepackage{geometry}
+ \geometry{a4paper, total={190mm,280mm}, left=10mm, top=10mm}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\usepackage{wrapfig}
+
+\begin{document}
+\part*{\centering{Θέματα για ομορφόπαιδα}}
+
+Δίνεται η σχέση
+$$x^2+y^2+λ(x-y+2)=2 \text{, } x\in \mathbb{R}$$
+\begin{enumerate}
+ \item Να δείξετε ότι ο κύκλος $x^2+y^2=2$ ανήκει στην παραπάνω σχέση
+ \item Αν το σημείο $A(0,1)$ ανήκει στην παραπάνω σχέση
+   \begin{enumerate}
+    \item Να δείξετε ότι $λ=0$.
+    \item Να γράψετε το κέντρο και την ακτίνα του κύκλου.
+    \item Να βρείτε την εφαπτόμενη του κύκλου στο $A$.
+    \item Να δείξετε ότι η ευθεία $y=x+3$ είναι εξωτερική του κύκλου και να βρείτε την ελάχιστη και μέγιστη απόστασή της από τα σημεία του κύκλου.
+   \end{enumerate}
+ \item Να βρείτε τις τιμές των $λ$ ώστε να παριστάνει κύκλο
+ \item Για $λ\ne 2$
+   \begin{enumerate}
+      \item Να βρείτε τα κέντρα των κύκλων και τις ακτίνες ως συνάρτηση του $λ$.
+      \item Να δείξετε ότι τα κέντρα ανήκουν σε ευθεία την οποία και να βρείτε
+      \item Να δείξετε ότι όλοι οι κύκλοι διέρχονται από σταθερά σημεία
+      \item Να δείξετε ότι η ευθεία $y=x+2$ εφάπτεται σε όλους τους κύκλους
+      \item Να δείξετε ότι όλοι οι κύκλοι εφάπτονται μεταξύ τους
+   \end{enumerate}
+\end{enumerate}
+
+\pagebreak
+
+\part*{\centering{Λύσεις}}
+
+\begin{enumerate}
+ \item Για $λ=0$ προκύπτει το ζητούμενο
+ \item Αντικαθιστώντας το σημείο έχουμε
+   \begin{enumerate}
+    \item $0+1+λ(0-1+2)=2\implies λ=1$
+    \item Έχει κέντρο το $(-1/2,1/2)$ και ακτίνα $1$
+    \item $λ_{KA}=1\implies λ=-1$. Η εφαπτομένη είναι $y-1=-(x-0)$
+    \item Η απόσταση της ευθείας από το κέντρο είναι $d=\frac{|1/2-1/2+3|}{\sqrt{1+1}}=\frac{3}{\sqrt{2}}>ρ$ άρα εξωτερική. Η μέγιστη από σταση είναι $ρ+d$ και η ελάχιστη $d-ρ$
+   \end{enumerate}
+ \item Θα πρέπει $ρ>0\implies λ\ne2$
+ \item Για $λ\ne 2$
+   \begin{enumerate}
+      \item $K(-λ/2,λ/2)$ και $ρ=\frac{|λ-2|}{\sqrt{2}}$.
+      \item $x=-λ/2$ και $y=λ/2$, άρα η ευθεία είναι η $y=-x$
+      \item Λύνοντας το σύστημα $x^2+y^2=2$ και $x-y+2=0$ βρίσκουμε το σημείο $(-1,1)$
+      \item Η απόσταση της ευθείας από το κέντρο $Κ$ είναι ίση με την ακτίνα.
+      \item Όλοι οι κύκλοι εφάπτονται στην ίδια ευθεία, άρα εφάπτονται και μεταξύ τους.
+   \end{enumerate}
+\end{enumerate}
+
+
+
+\end{document}
