@@ -1,0 +1,132 @@
+\documentclass[12pt]{extarticle}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+
+\setmainfont{Liberation Serif}
+
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+\usepackage{geometry}
+ \geometry{a4paper, total={190mm,275mm}, left=10mm, top=10mm}
+
+ \usepackage{graphicx}
+ \graphicspath{ {images/} }
+
+ \usepackage{wrapfig}
+
+\begin{document}
+
+\begin{table}
+  \small
+  \begin{tabularx}{\textwidth}{ c X r }
+    \begin{tabular}{ c }
+      \includegraphics[scale=0.4]{ελληνική}          \\
+      ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ                            \\
+      ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ \& ΘΡΗΣΚΕΥΜΑΤΩΝ             \\
+      ΠΕΡΙΦΕΡΕΙΑΚΗ Δ/ΝΣΗ Α/ΘΜΙΑΣ \& Β/ΘΜΙΑΣ  ΕΚΠ/ΣΗΣ \\
+      ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ                           \\
+      Δ/ΝΣΗ Β/ΘΜΙΑΣ ΕΚΠ/ΣΗΣ ΑΝ. ΘΕΣ/ΝΙΚΗΣ            \\
+      10ο ΓΕΝΙΚΟ ΛΥΚΕΙΟ ΘΕΣ/ΝΙΚΗΣ
+    \end{tabular}
+     &  &
+    \begin{tabular}{ r }
+      Σχολικό Έτος: 2022 - 2023     \\
+      Εξ. Περίοδος: Μαΐου - Ιουνίου \\
+      Μάθημα: Μαθηματικά Γ Λυκείου  \\
+      Προσανατολισμού               \\
+      Εισηγητές: Λόλας, Κράντας     \\ \\
+      Θεσσαλονίκη, 25 / 05 / 2023
+    \end{tabular}
+  \end{tabularx}
+\end{table}
+
+\part*{\centering{Θέματα}}
+\section*{Θέμα 1}
+\noindent
+\begin{enumerate}
+  \item[α)] Έστω μία συνάρτηση $f$ παραγωγίσιμη σε ένα διάστημα $(α,β)$ με εξαίρεση ίσως ένα σημείο του $x_0$, στο οποίο όμως η $f$ είναι συνεχής. Αν $f'(x)>0$ στο $(α,x_0)$ και $f'(x)<0$ στο $(x_0,β)$, τότε να αποδείξετε ότι το $f(x_0)$ είναι τοπικό μέγιστο της $f$ \hspace*{\fill} \textbf{Μονάδες 10}
+  \item[β)] Να δώσετε την γεωμετρική ερμηνεία του θεωρήματος μέσης τιμής του διαφορικού λογισμού. \hspace*{\fill} \textbf{Μονάδες 5}
+  \item[γ)] Να χαρακτηρίσετε τις παρακάτω προτάσεις με Σωστό ή Λάθος
+    \begin{enumerate}
+      \item [α)] Αν $\lim\limits_{x \to x_0}{ f(x) }=0$ και $f(x)>0$ κοντά στο $x_0$, τότε $\lim\limits_{x \to x_0}{ \dfrac{1}{f(x)} }=+\infty$
+      \item [β)] Ισχύει $\left( ημx \right)'=-συνx$.
+      \item [γ)] Αν $f'(x)>0$ για κάθε $x \in D_f$ τότε η $f$ είναι γνησίως φθίνουσα.
+      \item [δ)] Έστω $f$ μία συνεχής συνάρτηση σε ένα διάστημα $[α,β]$. Αν $G$ είναι μία παράγουσα της $f$ στο $[α,β]$, τότε $\int_α^β f(x)dx=G(β)-G(α)$
+      \item [ε)] Ισχύει $\lim\limits_{x \to 0}{ \dfrac{1-συνx}{x} }=0$ \hspace*{\fill} \textbf{Μονάδες 10}
+    \end{enumerate}
+
+\end{enumerate}
+
+\section*{Θέμα 2}
+\noindent
+
+Δίνονται οι συναρτήσεις $f(x)=\dfrac{1}{x-1}$, $x\ne 1$ και $g(x)=\dfrac{1}{e^x}$, $x\in \mathbb{R}$
+\begin{enumerate}
+  \item[α)] \begin{enumerate}
+      \item[i.] Να ορίσετε το πεδίο ορισμού της συνάρτησης $h(x)=(f\circ g)(x)$ \hspace*{\fill} \textbf{Μονάδες 6}
+      \item[ii.] Να βρείτε τον τύπο της συνάρτησης $h(x)=(f\circ g)(x)$ \hspace*{\fill} \textbf{Μονάδες 6}
+    \end{enumerate}
+
+    Αν $h(x)=\dfrac{e^x}{1-e^x}$, $x\in \mathbb{R}^*$ τότε:
+  \item[β)] να αποδείξετε ότι η συνάρτηση $h$ είναι '1-1' \hspace*{\fill} \textbf{Μονάδες 7}
+  \item[γ)] να υπολογίσετε το όριο: $\lim\limits_{x \to +\infty}{ h(x) }$ \hspace*{\fill} \textbf{Μονάδες 6}
+\end{enumerate}
+\newpage
+
+\section*{Θέμα 3}
+\noindent
+
+Έστω συνάρτηση η $$f(x)=\begin{cases} e^x-x & \text{, } x \ne 0 \\ 1 & \text{, } x = 0  \end{cases}$$
+\begin{enumerate}
+  \item[α)] Να δείξετε ότι η $f$ είναι συνεχής στο $\mathbb{R}$.\hspace*{\fill} \textbf{Μονάδες 5}
+  \item[β)] Να δείξετε ότι η εφαπτόμενη της $C_f$ στο $x=\ln2$ είναι η $y=x+2-2\ln2$.\hspace*{\fill} \textbf{Μονάδες 5}
+  \item[γ)] Να δείξετε ότι η $f$ είναι γν. φθίνουσα στο $\left(-\infty,0\right)$ και γν. αύξουσα στο $\left(0,+\infty\right)$\hspace*{\fill} \textbf{Μονάδες 5}
+  \item[δ)] Να βρείτε τα ακρότατα της $f$\hspace*{\fill} \textbf{Μονάδες 5}
+  \item[ε)] Να αποδείξετε ότι $e^{\pi}-e^e > \pi-e$\hspace*{\fill} \textbf{Μονάδες 5}
+\end{enumerate}
+
+\section*{Θέμα 4}
+\noindent
+
+Δίνεται η συνάρτηση $f(x)=e^{2x}+x^3+2x$
+
+\begin{enumerate}
+  \item[α)] Να αποδείξετε ότι η συνάρτηση $f$ είναι γνησίως αύξουσα.\hspace*{\fill} \textbf{Μονάδες 8}
+  \item[β)] Να αιτιολογήσετε γιατί η συνάρτηση $f$ αντιστρέφεται και να αποδείξετε ότι έχει σύνολο τιμών το $\mathbb{R}$
+
+    \hspace*{\fill} \textbf{Μονάδες 7}
+  \item[γ)] Να αποδείξετε ότι η αντίστροφη συνάρτηση της $f$ είναι επίσης γνησίως αύξουσα \hspace*{\fill} \textbf{Μονάδες 5}
+  \item[δ)] Να λυθεί η εξίσωση $f^{-1}(x)=0$ \hspace*{\fill} \textbf{Μονάδες 5}
+\end{enumerate}
+
+\part*{\centering{Καλή επιτυχία}}
+\begin{table}[htb]
+  \begin{tabularx}{\textwidth}{ X c X c X}
+     &
+    \begin{tabular}[t]{ c }
+      Ο Δ/ντης \\ \\ \\ \\
+      Παπαδημητρίου Χρήστος
+    \end{tabular}
+     &   &
+    \begin{tabular}[t]{ c }
+      Οι εισηγητές      \\ \\ \\ \\
+      Κράντας Στυλιανός \\ \\ \\ \\
+      Λόλας Κωνσταντίνος
+    \end{tabular}
+     &
+  \end{tabularx}
+\end{table}
+
+
+\vfill
+\textbf{Οδηγίες}
+\begin{enumerate}
+  \item Μην ξεχάσετε να γράψετε το ονοματεπώνυμό σας σε κάθε φύλλο απαντήσεων που σας δώσουν.
+  \item Όλες οι απαντήσεις να δωθούν στο φύλλο απαντήσεων. Οτιδήποτε γραφτεί στη σελίδα με τα θέματα δεν θα ληφθεί υπόψιν.
+\end{enumerate}
+\end{document}
