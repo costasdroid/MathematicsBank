@@ -1,0 +1,251 @@
+\documentclass[12pt]{extarticle}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+
+\setmainfont{Liberation Serif}
+
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+\usepackage{geometry}
+\geometry{a4paper, total={190mm,275mm}, left=10mm, top=10mm}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\usepackage{wrapfig}
+
+\usepackage{tikz}
+\newcommand*\monades[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\linespread{1.5}
+
+\begin{document}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{\roman{enumii}.}
+
+\section*{Θέμα Β}
+\noindent
+
+Αν $α*β=0$ τότε $α=0$ ή $β=0$
+
+Αν $α\cdot β \ne 0$ τότε $α\ne 0$ ή $β \ne 0$
+
+\begin{enumerate}
+    \item[A1.]
+    \item[A2.]
+    \item[A3.] $f$ συνεχής στο $[α,β]$ \monades{1}
+
+        $f$ παραγωγίσιμη στο $(α,β)$ \monades{1}
+
+        $f(α)=f(β)$ \monades{1}
+
+        Υπάρχει $ξ\in (α,β) : f'(ξ)=0$ \monades{1}
+
+        Σχήμα
+    \item[A4.] Λ Λ Λ Σ Σ
+\end{enumerate}
+
+
+\section*{Θέμα Β}
+\noindent
+
+\begin{enumerate}
+    \item[B1.]
+        Θα πρέπει
+
+        $x\in D_h\implies x>0$ και $h(x)\in D_g \implies x\in\mathbb{R}$
+
+        Άρα το πεδίο ορισμού θα είναι το $x>0$.\monades{2}
+
+        Για τον τύπο έχουμε $f(x)=(g\circ h)(x) = g(h(x))=g(\ln x)=\dfrac{4-e^{2\ln x}}{e^{\ln x}}=\dfrac{4-x^2}{x}$
+        monades{3}
+    \item[B2.]
+        \begin{enumerate}
+            \item Η συνάρτηση είναι παραγωγίσιμη ως πράξεις παραγωγίσιμων συναρτήσεων με
+
+                  $\underset{\textbf{\monades{2}}}{f'(x)=\dfrac{-2x^2-4+x^2}{x^2}=\dfrac{-x^2-4}{x^2}}
+                      \underset{\textbf{\monades{1}}}{<0}$
+                  άρα η $f$ είναι φθίνουσα \monades{1}
+            \item Η $f$ είναι λοιπόν γνησίως φθίνουσα και άρα
+
+                  $\underset{\textbf{\monades{2}}}{e<π\overset{f\downarrow}{\implies} f(e)>f(π)}
+                      \implies\dfrac{4-e^2}{e}>\dfrac{4-π^2}{π}\implies \dfrac{4-π^2}{4-e^2}>\dfrac{π}{e}\monades{2}$
+
+                  ή
+
+                  $\dfrac{4-π^2}{4-e^2}>\dfrac{π}{e}\iff 4e-eπ^2-4π+πe^2<0\iff 4(e-π)+eπ(e-π)<0\iff (e-π)(4+eπ)<0$
+        \end{enumerate}
+    \item[B3.]
+        Η $f$ είναι συνεχής στο $(0,+\infty)$ \monades{1}
+
+        Ισχύει $\lim\limits_{x \to 0}{ f(x) }=+\infty$ \monades{1}, άρα κατακόρυφη η $x=0$ \monades{1}
+
+        Για πλάγια στο $+\infty$, έχουμε
+
+        $α=\lim\limits_{x \to +\infty}{ \dfrac{f(x)}{x}}=\lim\limits_{x \to +\infty}{ \dfrac{4-x^2}{x^2}}=-1$ \monades{1} και
+
+        $β=\lim\limits_{x \to +\infty}{ f(x)-(-x) }=\lim\limits_{x \to +\infty}{ \dfrac{4}{x}}=0$ \monades{1}
+
+        Άρα η πλάγια στο $+\infty$ είναι η $y=-x$ \monades{1}
+
+        ή
+
+        $\lim\limits_{x \to +\infty}{ (f(x)+x) }=\lim\limits_{x \to +\infty}{ \dfrac{4}{x} }=0$ άρα η y=-x
+    \item[B4.]
+        Ισχύει $-1\le συν(1+x^2)\le 1 \implies$ \monades{1}
+
+        $-\left|\dfrac{1}{f(x)}\right|\le \dfrac{συν(1+x^2)}{f(x)}\le \left| \dfrac{1}{f(x)}\right|$ \monades{1}
+
+        Έχουμε ότι $\lim\limits_{x \to +\infty}{ \dfrac{1}{f(x)}}=\lim\limits_{x \to +\infty}{ \dfrac{x}{4-x^2} } = 0$ \monades{2}
+
+        Άρα με το κριτήριο παρεμβολής θα ισχύει $\lim\limits_{x \to +\infty}{  \dfrac{συν(1+x^2)}{f(x)}}=0$ \monades{2}
+\end{enumerate}
+
+\pagebreak
+
+\section*{Θέμα Γ}
+\noindent
+\begin{enumerate}
+    \item[Γ1.] Στο $[2,3]$ έχουμε $f(x)=\dfrac{1}{x}+1$ \monades{1}
+
+        Άρα $\int_{2}^{3}x \left( \dfrac{1}{x}+α \right)\, dx=\int_{2}^{3}1+αx\, dx = \left[   x+\dfrac{αx^2}{2} \right]_2^3=1+\dfrac{5α}{2}$ \monades{2}
+
+        $1+α\dfrac{5}{2}=1\implies α=0$ \monades{1}
+    \item[Γ2.]
+        \begin{enumerate}
+            \item $\lim\limits_{x \to 1^-}{ \dfrac{f(x)-f(1)}{x-1} }=\lim\limits_{x \to 1^-}{ \dfrac{x^2-3x+3-1}{x-1} }=\lim\limits_{x \to 1^-}{ \dfrac{(x-1)(x-2)}{x-1} }=-1$ \monades{1}
+
+                  $\lim\limits_{x \to 1^+}{ \dfrac{f(x)-f(1)}{x-1} }=\lim\limits_{x \to 1^+}{ \dfrac{\frac{1}{x}-1}{x-1} }=\lim\limits_{x \to 1^+}{ \dfrac{1-x}{x(x-1)} }=-1$ \monades{1}
+
+                  Άρα η $f$ είναι παραγωγίσιμη στο $-1$ με $f'(1)=-1$ \monades{1}
+
+                  Συνεπώς ορίζεται η εφαπτόμενη \monades{1}
+
+            \item Η εφαπτόμενη έχει εξίσωση $y-f(1)=f'(1)(x-1)$ \monades{1}
+
+                  άρα $y-1=-1(x-1)\implies y=-x+2$ \monades{1}
+
+                  αφού $λ=εφω=-1$ \monades{1} η γωνία θα είναι $ω=\dfrac{3π}{4}$ \monades{1}
+        \end{enumerate}
+    \item[Γ3.] για $x<1$, $f'(x)=2x-3$\monades{1}
+
+        για $x>1$, $f'(x)=-\dfrac{1}{x^2}$\monades{1}
+
+        Αφού η $f$ είναι παραγωγίσιμη στο $x=1$ είναι και συνεχής στο $x=1$ και με $f'(x)<0$ η συνάρτηση είναι γνησίως φθίνουσα και άρα "1-1"\monades{1}
+
+        Αφού $D_f=\mathbb{R}$, $f(D_f)=\left( \lim\limits_{x \to -\infty}{ f(x)},\lim\limits_{x \to +\infty}{ f(x) } \right)$ \monades{1}
+
+        $\lim\limits_{x \to -\infty}{ f(x)}=\lim\limits_{x \to -\infty}{ x^2-3x+3 }=\lim\limits_{x \to -\infty}{ x^2 }=+\infty$\monades{1}
+
+        $\lim\limits_{x \to +\infty}{ f(x)}=\lim\limits_{x \to +\infty}{ \dfrac{1}{x} }=0$ \monades{1}
+
+    \item[Γ4.]
+
+        Η $f$ είναι κυρτή άρα $f(x)>y_ε$ \monades{1}
+
+        η $y=-x+2$ τέμνει την $f$ στο $(1,f(1))=(1,1)$ \monades{1}
+
+        η $y=-x+2$ τέμνει τον $x'x$ στο $(2,0)$ \monades{1}
+
+        σχήμα \monades{1}
+
+        $E=\int_{1}^{2}\left( f(x)-y \right) \,dx+\int_{2}^{e}f(x)\,dx$
+
+        $\int_{1}^{2}\left( f(x)-y \right) \,dx=\int_{1}^{2}\left( \dfrac{1}{x}+x-2 \right) \,dx=\left[ \ln x+\dfrac{x^2}{2}-2x \right]_1^2=\ln 2+2-4-\dfrac{1}{2}+2=\ln 2-\dfrac{1}{2}$
+
+        $\int_{2}^{e}f(x)\,dx=\int_{2}^{e}\dfrac{1}{x}\,dx=\left[ \ln x \right]_2^e=\ln e-\ln 2$
+
+        Άρα $Ε=\dfrac{1}{2}$ \monades{3}
+
+        ή
+
+        $E=\int_{1}^{e}\dfrac{1}{x}\,dx-Ε_τ=\left[ \ln x \right]_1^e=\ln e-\ln 1-\dfrac{1\times 1}{2}=1-\dfrac{1}{2}=\dfrac{1}{2}$ \monades{3}
+
+\end{enumerate}
+
+\section*{Θέμα Δ}
+\noindent
+
+\begin{enumerate}
+    \item[Δ1.] Θέτω $g(x)=\dfrac{f(x)-2x}{x-1}\implies f(x)=g(x)(x-1)+2x$ \monades{2}
+
+        $\lim\limits_{x \to 1}{ f(x) }=l\cdot 0+2=2$ και $\lim\limits_{x \to 1}{ \left( \ln (2-x)-\dfrac{1}{x}+k \right)  }=-1+k$ \monades{1}
+
+        $-1+k=2\implies k=3$ \monades{1}
+
+    \item[Δ2.] $f'(x)=-\dfrac{1}{2-x}+\dfrac{1}{x^2}=\dfrac{-x^2+2-x}{x^2(2-x)}=\dfrac{(x+2)(1-x)}{x^2(2-x)}$ \monades{1}
+
+        Για $0< x\le 1$, $f'(x)>0$ άρα $f((0,1])=(\lim\limits_{x \to 0}{ f(x) },f(1)]=(-\infty,2]$
+
+        Για $1\le x < 2$, $f'(x)<0$ άρα $f([1,2))=(\lim\limits_{x \to 2}{ f(x) },f(1)]=(-\infty,2]$ \monades{1}
+
+        Το $0\in (-\infty,2]$ και σύμφωνα με το θετ, υπάρχουν ρίζες $x_1\in (0,1)$ και $x_2\in (1,2)$ \monades{1}
+
+        Η $f$ είναι γνησίως μονότονη σε κάθε διάστημα, άρα θα είναι και "1-1" άρα οι ρίζες θα είναι μοναδικές \monades{1}
+
+        $f(\dfrac{1}{3})=\ln \dfrac{5}{3}>0$ \monades{1}
+
+        Αφού $f(x_1)=0$ και η $f\uparrow$ θα ισχύει $x_1<\dfrac{1}{3}$ \monades{1}
+
+    \item[Δ3.] $f''(x)=\dfrac{1}{(2-x)^2}-\dfrac{2}{x^3}$ \monades{2}
+
+        άρα $f''(x)<0$ για $x\in (0,2)$ και η $f'$ είναι γνησίως φθίνουσα στο $(0,2)$ \monades{2}
+
+        Σύμφωνα με το ΘΜΤ στην $f$ στο $[x_1,\dfrac{1}{3}]$ έχουμε
+
+        Υπάρχει $ξ\in (0,1)$ ώστε $f'(ξ)=\dfrac{f(\frac{1}{3})-f(x_1)}{\frac{1}{3}-x_1}=\dfrac{3f(\frac{1}{3})}{1-3x_1}$ \monades{2}
+
+        ή
+
+        $f'((0,1])=[f'(1),\lim\limits_{x \to 0}{ f'(x) }]=[0,+\infty)$ \monades{1}
+
+        $\dfrac{3f(\frac{1}{3})}{1-3x_1}>0$ \monades{1}
+
+        άρα με θετ
+    \item[Δ4.]
+
+        \begin{enumerate}
+            \item     $F$ και $G$ αρχικές της $f$ άρα $F(x)=G(x)+c$ \monades{1}
+
+                  για $x=x_1$, $F(x_1)=G(x_1)+c \implies G(x_1)=-c$ \monades{1}
+
+                  για $x=x_2$, $F(x_2)=c$ \monades{1}
+
+                  άρα $F(x_2)+G(x_1)=0$ \monades{1}
+
+            \item Έστω $h(x)=x_1F(x)+x_2G(x)+2x-x_1-x_2$, $x\in [x_1,x_2]$ \monades{1}
+
+                  Στο $(x_1,x_2)$ η $f$ ως συνεχής διατηρεί πρόσημο, άρα $f(x)>0$
+
+                  $F'(x)=G'(x)=f(x)>0$ άρα $G$ και $F\uparrow$ \monades{1}
+
+                  $h(x_1)=x_2G(x_1)+(x_1-x_2)$
+
+                  $x_1<x_2\implies G(x_1)<G(x_2)=0$
+
+                  $h(x_1)<0$ \monades{1}
+
+                  $h(x_2)=x_1F(x_2)+(x_2-x_1)$
+
+                  $x_1<x_2\implies 0=F(x_1)<F(x_2)$
+
+                  $h(x_2)>0$ \monades{1}
+
+                  $h(x_1)h(x_2)<0$, Bolzano
+
+                  $h'(x)=(x_1+x_2)f(x)+2>0$
+
+                  Άρα $h\uparrow$ και άρα και "1-1"
+
+                  Άρα μοναδική ρίζα \monades{1}
+        \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
